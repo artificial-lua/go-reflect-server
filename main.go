@@ -31,11 +31,14 @@ func main() {
 
 			host := r.Host
 
+			body := r.Body
+
 			requestData := map[string]interface{}{
 				"host":         host,
 				"method":       method,
 				"address":      requestAddress,
 				"headers":      headerValues,
+				"body":         body,
 				"query_params": queryValues,
 			}
 
